@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "TTNormsProRegular";
+    src: url('webFonts/TTNormsProRegular/font.woff2') format('woff2'), url('webFonts/TTNormsProRegular/font.woff') format('woff');
+  }
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -24,6 +29,13 @@ h6 {
     margin: 0;
 }
 
+input[type="text"] {
+    display: block;
+    width: 350px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: #000 solid .5px;
+}
 
 .container {
     width: 100%;
@@ -82,7 +94,7 @@ h6 {
     width: 100%;
     height: 3px;
 
-    background-color: #C0DF17;
+    background-color: #fce38a;
     opacity: 0;
 
     position: absolute;
@@ -94,33 +106,29 @@ h6 {
 }
 
 .nav__link:hover {
-    color: #C0DF17;
+    color: #fce38a;
 }
 
 .nav__link:hover::after {
     opacity: 1;
 }
 
-/* Parallax Section Styles */
-.parallax-section {
-    background-image: url('../images/ITM_background.png');
-    background-size: cover;
+.intro {
+    max-width: 1440px;
+    margin: 0px 60px;
+}
+
+.parallax-container {
+    background-image: url("../images/ITM_background.png");
+    background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    background-size: 100% auto;
     display: flex;
+    height: 800px;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 2em;
-}
-
-.parallax-content {
-    max-width: 600px;
-}
-
-.intro {
-    max-width: 1440px;
-    margin: 0px 60px;
 }
 
 .intro__inner {
@@ -132,7 +140,6 @@ h6 {
 
 .tagline {
     margin-top: 70px;
-    position: relative;
 }
 
 .image-container {
@@ -140,10 +147,15 @@ h6 {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    height: 400px;
 }
+
+
 .slider__img {
-    width: 1440px;
+    width: 1200px;
 }
+
+
 .slider__line {
     display: flex;
     transition: all 1s;
@@ -183,7 +195,7 @@ h6 {
     color: #000;
     padding-left: 30px;
     padding-right: 10px;
-    font-size: 70px;
+    font-size: 60px;
     background-color: #D9D9D9;
     opacity: .7;
 }
@@ -195,11 +207,11 @@ h6 {
     height: 4px;
     margin-top: 40px;
 
-    background-color: #C0DF17;
+    background-color: #E52038;
 }
 
 .main {
-    display: flex;
+    display: absolute;
     text-align: left;
 }
 
@@ -222,7 +234,7 @@ h6 {
     height: 4px;
     margin-top: 40px;
 
-    background-color: #C0DF17;
+    background-color: #E52038;
 
 }
 
@@ -312,37 +324,40 @@ h6 {
     color: #7D6B61;
     font-weight: 600;
     min-width: 150px;
+
 }
 
-.form__daten__base {
-    width: 400px;
-    padding: 5px 10px;
-    font-size: 16px;
-    border: #000 solid .5px;
+.form__design {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
-.form__daten__place {
-    width: 200px;
-    padding: 5px 10px;
-    font-size: 16px;
-    border: #000 solid .5px;
+.column {
+    padding: 10px;
+}
+
+.form-group {
+    display: inline-block;
     margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.left__colums {
-    float: left;
-    margin-right: 100px;
+label {
+    display: block;
 }
 
 #button__send {
-    display: block;
     border: none;
     border-radius: 5px;
-    background-color: #C0DF17;
+    background-color: brown;
     color: white;
 
     font-size: 20px;
     padding: 10px 10px;
+
+    margin-top: 20px;
 }
 
 /* Impessum.html */
@@ -390,13 +405,4 @@ h6 {
     font-size: 20px;
     font-weight: 400;
 
-}
-
-
-@media (max-width: 1300px) {
-    .tagline__text {
-        position: absolute;
-        left: auto;
-        right: auto;
-    }
 }

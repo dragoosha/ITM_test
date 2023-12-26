@@ -1,0 +1,60 @@
+@media screen and (max-width: 1200px){
+    .parallax-container {
+        height: 0vh;
+    }
+
+    .tagline__text {
+        top: 20%;
+        font-size: 30px;
+    }
+
+    .image-container {
+        width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 998px){
+    .parallax-container {
+        height: 0vh;
+    }
+
+    .tagline {
+        margin-top: 30px;
+    }
+
+    .tagline__text {
+        top: 20%;
+        font-size: 25px;
+    }
+
+    .image-container {
+        width: 400px;
+    }
+
+    .header__logo {
+        font-size: 20px;
+    }
+    .form__daten {
+        margin-top: 15px;
+    }
+    .form__design {
+        display: block;
+    }
+    .column {
+        padding: 5px;
+    }
+    .form__group {
+        margin-right: 0px;
+     margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+
+}
+@media screen and (max-width: 576px){
+
+
+}
